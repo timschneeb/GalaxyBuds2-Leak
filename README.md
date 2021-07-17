@@ -5,20 +5,20 @@ I just found a beta-release of the new unreleased Samsung Galaxy Buds 2 plugin o
 
 There are pictures of the earbuds in various colors: black, white, gray/green, violet, and yellow
 
-| ![home_image_black](resources\res\drawable-xxhdpi\home_image_black.png) | ![home_image_violet](resources\res\drawable-xxhdpi\home_image_violet.png) |
+| ![home_image_black](resources/res/drawable-xxhdpi/home_image_black.png) | ![home_image_violet](resources/res/drawable-xxhdpi/home_image_violet.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![home_image_green](resources\res\drawable-xxhdpi\home_image_green.png) | ![home_image_white](resources\res\drawable-xxhdpi\home_image_white.png) |
-| ![home_image_yellow](resources\res\drawable-xxhdpi\home_image_yellow.png) |                                                              |
+| ![home_image_green](resources/res/drawable-xxhdpi/home_image_green.png) | ![home_image_white](resources/res/drawable-xxhdpi/home_image_white.png) |
+| ![home_image_yellow](resources/res/drawable-xxhdpi/home_image_yellow.png) |                                                              |
 
 The APK did not contain any battery case images (except simple line-art that matches the Buds Pro and Buds Live case)
 
 ### Home-screen widget preview
 
-![widget_preview_buds_controller](resources\res\drawable-xxhdpi\widget_preview_buds_controller.png)
+![widget_preview_buds_controller](resources/res/drawable-xxhdpi/widget_preview_buds_controller.png)
 
 ### Cover widget preview
 
-![cover_widget_preview](resources\res\drawable-xxhdpi\cover_widget_preview.png)
+![cover_widget_preview](resources/res/drawable-xxhdpi/cover_widget_preview.png)
 
 ## New features
 
@@ -33,7 +33,7 @@ The APK did not contain any battery case images (except simple line-art that mat
 | 61mAh    | 472mAh   |
 | 5V, 0.2A | 5V, 0.6A |
 
-(See screenshots below)
+(See screenshot below)
 
 ## Comparison with the Buds Pro
 
@@ -47,24 +47,24 @@ The APK did not contain any battery case images (except simple line-art that mat
 
 I'm patching the app on-the-fly to simulate a pair of Buds2. The battery dashboard has been redesigned and is much simpler. Some settings like the Bixby Voice-wakeup and 'ANC with one earbud' are invisible, I didn't bother patching all of those in as well, but they exist.
 
-| ![photo_2021-07-17_16-14-33](screenshots\photo_2021-07-17_16-14-33.jpg) | ![photo_2021-07-17_16-14-45](screenshots\photo_2021-07-17_16-14-45.jpg) |
+| ![photo_2021-07-17_16-14-33](screenshots/photo_2021-07-17_16-14-33.jpg) | ![photo_2021-07-17_16-14-45](screenshots/photo_2021-07-17_16-14-45.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 The new touch options (including some info pages):
 
-| ![photo_2021-07-17_16-14-29](screenshots\photo_2021-07-17_16-14-29.jpg) | ![photo_2021-07-17_16-14-28](screenshots\photo_2021-07-17_16-14-28.jpg) |
+| ![photo_2021-07-17_16-14-29](screenshots/photo_2021-07-17_16-14-29.jpg) | ![photo_2021-07-17_16-14-28](screenshots/photo_2021-07-17_16-14-28.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![photo_2021-07-17_16-15-04](screenshots\photo_2021-07-17_16-15-04.jpg) | ![photo_2021-07-17_16-15-02](screenshots\photo_2021-07-17_16-15-02.jpg) |
-| ![photo_2021-07-17_16-15-00](screenshots\photo_2021-07-17_16-15-00.jpg) |                                                              |
+| ![photo_2021-07-17_16-15-04](screenshots/photo_2021-07-17_16-15-04.jpg) | ![photo_2021-07-17_16-15-02](screenshots/photo_2021-07-17_16-15-02.jpg) |
+| ![photo_2021-07-17_16-15-00](screenshots/photo_2021-07-17_16-15-00.jpg) |                                                              |
 
 And here are some other various screenshots. The Equalizer settings are the same, and the 'Find my earbuds' page has been redesigned a little bit.
 
-| ![photo_2021-07-17_16-14-41](screenshots\photo_2021-07-17_16-14-41.jpg) | ![photo_2021-07-17_16-14-31](screenshots\photo_2021-07-17_16-14-31.jpg) |
+| ![photo_2021-07-17_16-14-41](screenshots/photo_2021-07-17_16-14-41.jpg) | ![photo_2021-07-17_16-14-31](screenshots/photo_2021-07-17_16-14-31.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![photo_2021-07-17_16-15-06](screenshots\photo_2021-07-17_16-15-06.jpg) | ![photo_2021-07-17_16-14-39](screenshots\photo_2021-07-17_16-14-39.jpg) |
+| ![photo_2021-07-17_16-15-06](screenshots/photo_2021-07-17_16-15-06.jpg) | ![photo_2021-07-17_16-14-39](screenshots/photo_2021-07-17_16-14-39.jpg) |
 
 
 
 ### Other stuff
 
-New model number: `SM-R177`
+New model number (earbuds): `SM-R177`
