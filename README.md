@@ -37,7 +37,6 @@ The APK did not contain any battery case images (except simple line-art that mat
 
 ## Comparison with the Buds Pro
 
-- No 360° sound feature
 - No 'outside double-tap volume controls' for now. While there's still logic for it in the Bluetooth backend present, this feature was completely stripped from the UI code. They might re-introduce this later with a firmware and app update.
 - ANC and Ambient sound are available as well
 - ANC does not have the "High/Low" option anymore. You can't fine-tune it; however ANC can now be used even if only one earbud is connected.
