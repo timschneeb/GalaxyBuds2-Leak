@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_widget_quick_control_container" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/title_layout" android:paddingTop="16dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_galaxy_wearble"/>
+                <TextView android:textSize="24dp" android:textColor="#99fafafa" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/widget_text_device_bt_name" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="14dp" style="@style/WidgetTitleTextAppearance"/>
+                <FrameLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textSize="24dp" android:textColor="#99fafafa" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/coverwidget_battery" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_find_my_gear_disconnected" android:maxLines="1" style="@style/WidgetTitleTextAppearance"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/switch_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:soundEffectsEnabled="false">
+                    <FrameLayout android:layout_width="80dp" android:layout_height="80dp">
+                        <ImageView android:id="@+id/image_widget_quick_control_option_1_bg" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/widget_bg_off" android:adjustViewBounds="true"/>
+                        <ImageView android:id="@+id/image_widget_quick_control_option_1" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/widget_ic_noise_control" android:adjustViewBounds="true"/>
+                    </FrameLayout>
+                    <TextView android:textSize="24dp" android:textColor="@color/widget_cover_text_color_white_opacity_40" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/text_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:maxLines="1" android:importantForAccessibility="no"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/widget_quick_control_divider" android:background="#5c5c5c" android:layout_width="1dp" android:layout_height="72dp" android:layout_marginTop="2dp"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/switch_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <FrameLayout android:layout_width="80dp" android:layout_height="80dp">
+                        <ImageView android:id="@+id/image_widget_quick_control_option_2_bg" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/widget_bg_off" android:adjustViewBounds="true"/>
+                        <ImageView android:id="@+id/image_widget_quick_control_option_2" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/widget_ic_block_touch" android:adjustViewBounds="true"/>
+                    </FrameLayout>
+                    <TextView android:textSize="24dp" android:textColor="@color/widget_cover_text_color_white_opacity_40" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/text_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/settings_touchpad_menu1" android:maxLines="1" android:importantForAccessibility="no"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/layout_open_phone_for_details" android:background="#000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="24dp" android:layout_gravity="center" android:id="@+id/open_phone_for_details" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_few_legal_items_to_review" android:textAlignment="center" android:layout_marginStart="14dp" style="@style/WidgetTitleTextAppearance"/>
+    </LinearLayout>
+</FrameLayout>

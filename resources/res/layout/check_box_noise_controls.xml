@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="18dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/checkbox_anc_ambient" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_centerVertical="true" android:importantForAccessibility="yes">
+            <RadioButton android:layout_gravity="center_vertical" android:id="@+id/radio_button_anc_ambient" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="@dimen/radio_button_text_content_inset" android:layout_marginEnd="@dimen/radio_button_text_content_inset"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/text_anc_ambient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginEnd="@dimen/radio_button_text_content_inset" style="@style/ListItemTitleTextAppearance"/>
+                <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/checkbox_anc_off" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_centerVertical="true" android:importantForAccessibility="yes">
+            <RadioButton android:layout_gravity="center_vertical" android:id="@+id/radio_button_anc_off" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="@dimen/radio_button_text_content_inset" android:layout_marginEnd="@dimen/radio_button_text_content_inset"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/text_anc_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginEnd="@dimen/radio_button_text_content_inset" style="@style/ListItemTitleTextAppearance"/>
+                <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/checkbox_ambient_off" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_centerVertical="true" android:importantForAccessibility="yes">
+            <RadioButton android:layout_gravity="center_vertical" android:id="@+id/radio_button_ambient_off" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="@dimen/radio_button_text_content_inset" android:layout_marginEnd="@dimen/radio_button_text_content_inset"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/text_ambient_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginEnd="@dimen/radio_button_text_content_inset" style="@style/ListItemTitleTextAppearance"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

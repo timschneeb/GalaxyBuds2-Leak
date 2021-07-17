@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/guide_image_width" android:layout_height="@dimen/guide_image_height">
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/vi_view" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_loop="true" app:lottie_rawRes="@raw/tips_pairing"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TipsManualTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/tips_pairing_title" android:layout_marginStart="@dimen/list_item_content_inset" android:layout_marginEnd="@dimen/list_item_content_inset"/>
+    <com.samsung.accessory.hearablemgr.common.p009ui.CanAwakeNestedScrollView android:id="@+id/nested_scroll" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="@dimen/tips_manual_description_default_height" android:layout_marginTop="@dimen/tips_manual_description_top_margin" android:overScrollMode="never" android:importantForAccessibility="noHideDescendants">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_content_inset" android:paddingEnd="@dimen/list_item_content_inset">
+            <TextView android:id="@+id/tips_pair_with_a_phone_or_tablet_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TipsManualContentsTextAppearance"/>
+        </LinearLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.CanAwakeNestedScrollView>
+</LinearLayout>

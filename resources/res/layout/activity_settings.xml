@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:title="@string/earbuds_settings" style="@style/AppCollapsingToolbarStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:navigationIcon="?attr/homeAsUpIndicator" app:title="@string/earbuds_settings"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/nested_scroll" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:background="@color/contents_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:id="@+id/layout_item_equalizer" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height">
+                                <ImageView android:id="@+id/image_icon_equalizer" android:layout_width="@dimen/menu_icon_size" android:layout_height="@dimen/menu_icon_size" android:src="@drawable/home_settings_ic_equalizer" android:layout_centerVertical="true" android:layout_marginStart="@dimen/menu_icon_margin_start"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/list_item_content_inset" android:layout_marginStart="@dimen/menu_text_margin_start" android:layout_toEndOf="@+id/image_icon_equalizer">
+                                    <TextView android:textAppearance="@style/ListItemTitleTextAppearance" android:id="@+id/text_title_equalizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equalizer"/>
+                                    <TextView android:textAppearance="@style/ListItemSettingValueTextAppearance" android:id="@+id/text_description_equalizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="text_description_equalizer"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="@dimen/menu_divider_margin_start" android:layout_marginEnd="@dimen/menu_divider_margin_end"/>
+                            <RelativeLayout android:id="@+id/layout_item_notification" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height">
+                                <ImageView android:id="@+id/image_icon_notification" android:layout_width="@dimen/menu_icon_size" android:layout_height="@dimen/menu_icon_size" android:src="@drawable/home_settings_ic_notifications" android:layout_centerVertical="true" android:layout_marginStart="@dimen/menu_icon_margin_start"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/list_item_content_inset" android:layout_marginStart="@dimen/menu_text_margin_start" android:layout_toEndOf="@+id/image_icon_notification">
+                                    <TextView android:textAppearance="@style/ListItemTitleTextAppearance" android:id="@+id/text_title_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_notifications_aloud"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout>
+                    <FrameLayout android:id="@+id/main_content_frame" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menu_group_margin_top">
+                        <LinearLayout android:orientation="vertical" android:background="@color/contents_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:id="@+id/layout_item_software_update" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height">
+                                <ImageView android:id="@+id/image_icon_software_update" android:layout_width="@dimen/menu_icon_size" android:layout_height="@dimen/menu_icon_size" android:src="@drawable/home_settings_ic_earbuds_software" android:layout_centerVertical="true" android:layout_marginStart="@dimen/menu_icon_margin_start"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/list_item_content_inset" android:layout_marginStart="@dimen/menu_text_margin_start" android:layout_toEndOf="@+id/image_icon_software_update">
+                                    <TextView android:textAppearance="@style/ListItemTitleTextAppearance" android:id="@+id/text_title_software_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_menu_earbuds_software_update"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="@dimen/menu_divider_margin_start" android:layout_marginEnd="@dimen/menu_divider_margin_end"/>
+                            <RelativeLayout android:id="@+id/layout_item_about_earbuds" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height">
+                                <ImageView android:id="@+id/image_icon_about_earbuds" android:layout_width="@dimen/menu_icon_size" android:layout_height="@dimen/menu_icon_size" android:src="@drawable/home_settings_ic_about_watch" android:layout_centerVertical="true" android:layout_marginStart="@dimen/menu_icon_margin_start"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/list_item_content_inset" android:layout_marginStart="@dimen/menu_text_margin_start" android:layout_toEndOf="@+id/image_icon_about_earbuds">
+                                    <TextView android:textAppearance="@style/ListItemTitleTextAppearance" android:id="@+id/text_title_about_earbuds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_menu_about_earbuds"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout>
+                </LinearLayout>
+            </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout>
+        </RelativeLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_top_left" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800033"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_top_right" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800035"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_bottom_left" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800053"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_bottom_right" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800055"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

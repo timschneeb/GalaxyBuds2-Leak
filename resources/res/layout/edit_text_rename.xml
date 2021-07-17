@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:textColor="@color/title_text_normal_color" android:id="@+id/editText_device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:singleLine="true" android:fontFamily="@string/roboto_medium" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:backgroundTint="@color/color_primary">
+            <requestFocus/>
+        </EditText>
+        <TextView android:textSize="13sp" android:textColor="@color/description_text_normal_color" android:id="@+id/text_invalid_reason" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:fontFamily="@string/roboto_regular" android:textDirection="locale" android:layout_marginStart="30dp" android:layout_marginEnd="26dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="about_earbuds_edit_invalid_length">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಅಕ್ಷರವನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+    </plurals>
+    <plurals name="detect_conversations_about_seconds">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಸೆಕೆಂಡು</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d ಸೆಕೆಂಡುಗಳು</item>
+    </plurals>
+    <plurals name="tips_pair_with_a_phone_or_tablet_desc">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ನೀವು ಈಗಾಗಲೇ ನಿಮ್ಮ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ಫೋನ್ ಅಥವಾ ಟ್ಯಾಬ್ಲೆಟ್ ಜೊತೆ ಜೋಡಿಗೊಂಡಿದ್ದರೆ, ಅವುಗಳನ್ನು ಮತ್ತೊಮ್ಮೆ ಸಂಪರ್ಕಿಸಲು ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ತೆರೆಯಿರಿ.\10\10ಅವು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಪರ್ಕಿಸದಿದ್ದರೆ, ಅಥವಾ ನೀವು ಹೊಸ ಫೋನ್‌ ಟ್ಯಾಬ್ಲೆಟ್ ಜೊತೆ ಜೋಡಿಗೊಳಿಸಲು ಬಯಸಿದರೆ,ನಿಮ್ಮ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ, ನಂತರ ನೀವು ಬೀಪ್ ಶಬ್ಧವನ್ನು ಆಲಿಸುವತನಕ %d ಸೆಕೆಂಡುಗಳ ಕಾಲ ಎರಡೂ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ಸ್ಪರ್ಶಿಸಿ ಹಿಡಿಯಿರಿ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">ನೀವು ಈಗಾಗಲೇ ನಿಮ್ಮ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ಫೋನ್ ಅಥವಾ ಟ್ಯಾಬ್ಲೆಟ್ ಜೊತೆ ಜೋಡಿಗೊಂಡಿದ್ದರೆ, ಅವುಗಳನ್ನು ಮತ್ತೊಮ್ಮೆ ಸಂಪರ್ಕಿಸಲು ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ತೆರೆಯಿರಿ.\10\10ಅವು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಪರ್ಕಿಸದಿದ್ದರೆ, ಅಥವಾ ನೀವು ಹೊಸ ಫೋನ್‌ ಟ್ಯಾಬ್ಲೆಟ್ ಜೊತೆ ಜೋಡಿಗೊಳಿಸಲು ಬಯಸಿದರೆ,ನಿಮ್ಮ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ, ನಂತರ ನೀವು ಬೀಪ್ ಶಬ್ಧವನ್ನು ಆಲಿಸುವತನಕ %d ಸೆಕೆಂಡ್ ಕಾಲ ಎರಡೂ ಇಯರ್‌ಬಡ್‌ಗಳನ್ನು ಸ್ಪರ್ಶಿಸಿ ಹಿಡಿಯಿರಿ.</item>
+    </plurals>
+    <plurals name="voice_detect_card_desc">
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಸೆಕೆಂಡಿನ ಕಾಲ ನಿಮ್ಮ ಧ್ವನಿಯು ಪತ್ತೆಯಾಗದೇ ಇದ್ದರೆ ಶಬ್ಧ ನಿಯಂತ್ರಣಗಳು ಮತ್ತು ಧ್ವನಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಹಿಂದಿನ ಸ್ಥಿತಿಗೆ ಮರಳಿ ಹೋಗುತ್ತವೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+        <item quantity="other">%d ಸೆಕೆಂಡುಗಳ ಕಾಲ ನಿಮ್ಮ ಧ್ವನಿಯು ಪತ್ತೆಯಾಗದೇ ಇದ್ದರೆ ಶಬ್ಧ ನಿಯಂತ್ರಣಗಳು ಮತ್ತು ಧ್ವನಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಹಿಂದಿನ ಸ್ಥಿತಿಗೆ ಮರಳಿ ಹೋಗುತ್ತವೆ</item>
+    </plurals>
+</resources>

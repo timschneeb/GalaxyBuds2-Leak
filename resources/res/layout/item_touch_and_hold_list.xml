@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/options_list" android:background="@color/contents_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/item_list" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/setting_layout">
+            <RadioButton android:id="@+id/option_radio" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_layout" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_centerVertical="true" android:layout_toEndOf="@+id/option_radio">
+                <TextView android:textSize="18sp" android:textColor="@color/selector_list_title_color" android:layout_gravity="center_vertical" android:id="@+id/option_textview" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/roboto_regular"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_primary_dark" android:layout_gravity="center_vertical" android:id="@+id/option_sub_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/roboto_regular"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/setting_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/content_layout" android:layout_alignBottom="@+id/content_layout" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+            <View android:layout_gravity="center_vertical" android:id="@+id/switch_divider" android:background="@color/basic_vertical_divider_color" android:layout_width="@dimen/list_item_divider_height" android:layout_height="@dimen/switch_divider_height"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_setting_image" android:background="?android:attr/actionBarItemBackground" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="16dp" android:layout_marginEnd="24dp"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_marginStart="68dp" android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

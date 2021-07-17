@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:title="@string/card_menu_earbuds_software_update" style="@style/AppCollapsingToolbarStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:navigationIcon="?attr/homeAsUpIndicator" app:title="@string/card_menu_earbuds_software_update"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/nested_scroll" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/body_layout" android:background="@color/contents_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/download_updates_manually_layout" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height" android:importantForAccessibility="yes" android:paddingStart="@dimen/list_item_content_inset" android:paddingEnd="@dimen/list_item_content_inset">
+                                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@+id/badge_notification">
+                                        <TextView android:id="@+id/download_updates_manually_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download_install_manually" style="@style/ListItemTitleTextAppearance"/>
+                                        <TextView android:id="@+id/download_update_last_checked_on_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download_update_manually_content1" style="@style/ListItemDescriptionTextAppearance"/>
+                                    </LinearLayout>
+                                    <TextView android:id="@+id/badge_notification" android:visibility="visible" android:text="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="@dimen/list_item_content_inset" android:layout_alignParentEnd="true" style="@style/BadgeForNotification"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="@dimen/list_item_divider_inset" android:layout_marginEnd="@dimen/list_item_divider_inset"/>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/last_update_layout" android:paddingTop="@dimen/list_item_text_top_bottom_padding" android:paddingBottom="@dimen/list_item_text_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_1line_min_height" android:importantForAccessibility="yes" android:paddingStart="@dimen/list_item_content_inset" android:paddingEnd="@dimen/list_item_content_inset">
+                                <TextView android:id="@+id/last_update_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/last_update" style="@style/ListItemTitleTextAppearance"/>
+                                <TextView android:id="@+id/last_update_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/last_update_body" style="@style/ListItemDescriptionTextAppearance"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout>
+                </LinearLayout>
+            </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout>
+        </RelativeLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

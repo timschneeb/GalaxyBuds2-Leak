@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_widget_quick_control_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/widget_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background_widget"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/widget_portrait_layout_min_width" android:minHeight="@dimen/widget_portrait_layout_min_height">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/widget_portrait_device_bt_name_text_size" android:ellipsize="end" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/widget_text_device_bt_name" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="5dp" android:paddingEnd="5dp" style="@style/WidgetTitleTextAppearance"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_portrait_device_image_top_margin">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/switch_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:soundEffectsEnabled="false">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/widget_portrait_device_image_max_height" android:layout_weight="1">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/image_widget_quick_control_option_1_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_bg_off" android:adjustViewBounds="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                            <ImageView android:id="@+id/image_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_ic_noise_control" android:adjustViewBounds="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/widget_portrait_master_title_text_size" android:textColor="@color/widget_title_color_style_black" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/text_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_portrait_device_image_top_margin" android:maxLines="1" android:importantForAccessibility="no" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/switch_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/widget_portrait_device_image_max_height" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"/>
+                            <ImageView android:id="@+id/widget_quick_control_divider" android:background="@color/widget_divider_color_black" android:layout_width="1px" android:layout_height="match_parent" android:layout_weight="0.1"/>
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"/>
+                        </LinearLayout>
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/image_widget_quick_control_option_2_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_bg_off" android:adjustViewBounds="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                            <ImageView android:id="@+id/image_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_ic_block_touch" android:adjustViewBounds="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/widget_portrait_master_title_text_size" android:textColor="@color/widget_title_color_style_black" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/text_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_portrait_device_image_top_margin" android:text="@string/settings_touchpad_menu1" android:maxLines="1" android:importantForAccessibility="no" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="27sp" android:textColor="@color/color_list_item_text" android:ellipsize="end" android:gravity="center" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="71dp" android:layout_marginBottom="73dp" android:text="Earbuds permissions" android:maxLines="2" android:lineSpacingExtra="5sp" android:fontFamily="@string/roboto_regular" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/color_description_text" android:id="@+id/text_description1" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8sp" android:fontFamily="@string/roboto_regular" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="18dp">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_storage" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content3" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content4" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_phone" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content5" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content6" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_contacts" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content7" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content8" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_message" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content9" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content10" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_calendar" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content11" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content12" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:src="@drawable/permission_call_logs" android:tint="@color/color_list_item_text" android:layout_marginStart="28dp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="80dp" android:layout_marginEnd="24dp">
+                                <TextView android:textAppearance="@style/PermissionsTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content13" android:lineSpacingExtra="7sp"/>
+                                <TextView android:textAppearance="@style/PermissionsDescriptionTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eula_permissions_content14" android:lineSpacingExtra="2sp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <TextView android:textSize="14sp" android:textColor="@color/color_description_text" android:id="@+id/text_description2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/eula_permissions_content15" android:lineSpacingExtra="8sp" android:fontFamily="@string/roboto_regular" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout>
+</FrameLayout>

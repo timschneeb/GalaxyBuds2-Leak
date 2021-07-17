@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/drawer_item_1line_min_height" android:paddingStart="@dimen/list_item_content_inset" android:paddingEnd="@dimen/list_item_content_inset">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/drawer_item_top_bottom_margin" android:paddingBottom="@dimen/drawer_item_top_bottom_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="48dp" android:layout_marginEnd="35dp">
+        <TextView android:textAppearance="@style/DrawerItemTitleAppearance" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="true" android:lineSpacingExtra="3sp"/>
+        <TextView android:textAppearance="@style/DrawerItemDescriptionAppearance" android:ellipsize="end" android:id="@+id/text_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connected" android:maxLines="1" android:includeFontPadding="true"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="32dp" android:layout_height="32dp" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/image_icon" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/home_device_buds_pro" android:scaleType="fitXY" android:tint="@color/color_list_item_text" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image_selected" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginBottom="1.3dp" android:src="@drawable/home_selected_drawer" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_marginEnd="1.3dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="30dp" android:layout_height="30dp" android:layout_centerVertical="true" android:layout_marginEnd="7dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/image_chooser" android:background="@drawable/background_default_ripple" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/home_chooser_activity_paired_app" android:scaleType="fitXY"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_connect" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp"/>
+    </FrameLayout>
+</RelativeLayout>

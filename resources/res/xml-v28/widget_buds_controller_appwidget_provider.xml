@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" android:minWidth="180dp" android:minHeight="40dp" android:updatePeriodMillis="1800000" android:initialLayout="@layout/widget_view_buds_controller_port" android:configure="com.samsung.accessory.hearablemgr.core.appwidget.WidgetSettingBudsControllerActivity" android:previewImage="@drawable/widget_preview_buds_controller" android:resizeMode="horizontal" android:minResizeWidth="180dp" android:widgetFeatures="1"/>

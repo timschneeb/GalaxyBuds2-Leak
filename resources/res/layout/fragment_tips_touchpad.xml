@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="@dimen/guide_image_width" android:layout_height="@dimen/guide_image_height">
+            <com.samsung.accessory.hearablemgr.common.p009ui.LottieVIListView android:id="@+id/vi_view" android:layout_width="match_parent" android:layout_height="match_parent" app:rawResList="tips_tap,tips_double_tap,tips_triple_tap,tips_tap_and_hold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TipsManualTitleTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/settings_touchpad" android:layout_marginStart="@dimen/list_item_content_inset" android:layout_marginEnd="@dimen/list_item_content_inset"/>
+    <com.samsung.accessory.hearablemgr.common.p009ui.CanAwakeNestedScrollView android:id="@+id/nested_scroll" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="@dimen/tips_manual_description_button_view_height" android:layout_marginTop="@dimen/tips_manual_description_top_margin" android:overScrollMode="never" android:importantForAccessibility="noHideDescendants">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_content_inset" android:paddingEnd="@dimen/list_item_content_inset">
+            <TextView android:id="@+id/text_single_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_single_tap" style="@style/TipsManualContentsTextAppearance"/>
+            <TextView android:id="@+id/text_double_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24sp" android:text="@string/tips_double_tap" style="@style/TipsManualContentsTextAppearance"/>
+            <TextView android:id="@+id/text_triple_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24sp" android:text="@string/tips_triple_tap" style="@style/TipsManualContentsTextAppearance"/>
+            <TextView android:id="@+id/text_touch_and_hold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24sp" android:text="@string/tips_touch_hold" style="@style/TipsManualContentsTextAppearance"/>
+            <TextView android:id="@+id/text_turn_on_touch_controls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24sp" android:text="@string/tips_turn_on_touch_controls_in_settings" style="@style/TipsManualContentsTextAppearance"/>
+        </LinearLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.CanAwakeNestedScrollView>
+    <FrameLayout android:layout_gravity="end" android:id="@+id/layout_tips_button" android:background="@drawable/button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginEnd="@dimen/list_item_content_inset" android:backgroundTint="@color/fit_test_button_stop_color">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/basic_title_main_text_color" android:gravity="center" android:id="@+id/text_tips_button" android:background="@drawable/background_button_ripple" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="140dp" android:minHeight="44dp" android:text="@string/tips_settings" android:includeFontPadding="false" android:fontFamily="@string/roboto_medium" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    </FrameLayout>
+</LinearLayout>

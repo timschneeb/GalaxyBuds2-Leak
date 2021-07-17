@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_app_bar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3" app:title="@string/settings_touchpad" style="@style/AppCollapsingToolbarStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:navigationIcon="?attr/homeAsUpIndicator" app:title="@string/settings_touchpad">
+                <ImageView android:layout_gravity="end" android:id="@+id/image_tips" android:background="?attr/actionBarItemBackground" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/tw_ic_ab_app_info_mtrl" android:tint="@color/color_list_item_text" android:contentDescription="@string/app_info" android:layout_marginEnd="20dp"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/nested_scroll" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.SeslSwitchBar android:id="@+id/switch_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout>
+                    <com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/visible_layout_tap_list" android:background="@color/contents_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/visible_layout_tap" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@+id/tap_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/switch_layout_tap">
+                                    <LinearLayout android:orientation="vertical" android:id="@+id/text_layout_tap" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_content_inset">
+                                        <TextView android:id="@+id/text_tap_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_single_tap" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemTitleTextAppearance"/>
+                                        <TextView android:id="@+id/text_tap_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_play_pause_track" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemDescriptionTextAppearance"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/switch_layout_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tap_content_layout" android:layout_alignBottom="@+id/tap_content_layout" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                                    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/switch_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="24dp"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                            <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/visible_layout_double_tap" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@+id/double_tap_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/switch_layout_double_tap">
+                                    <LinearLayout android:orientation="vertical" android:id="@+id/text_layout_double_tap" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_content_inset">
+                                        <TextView android:id="@+id/text_double_tap_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_double_tap" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemTitleTextAppearance"/>
+                                        <TextView android:id="@+id/text_double_tap_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_next_track" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemDescriptionTextAppearance"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/switch_layout_double_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/double_tap_content_layout" android:layout_alignBottom="@+id/double_tap_content_layout" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                                    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/switch_double_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="24dp"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                            <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/visible_layout_triple_tap" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@+id/triple_tap_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/switch_layout_triple_tap">
+                                    <LinearLayout android:orientation="vertical" android:id="@+id/text_layout_triple_tap" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_content_inset">
+                                        <TextView android:id="@+id/text_triple_tap_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_triple_tap" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemTitleTextAppearance"/>
+                                        <TextView android:id="@+id/text_triple_tap_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_previous_track" android:textDirection="locale" android:textAlignment="gravity" style="@style/ListItemDescriptionTextAppearance"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/switch_layout_triple_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/triple_tap_content_layout" android:layout_alignBottom="@+id/triple_tap_content_layout" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                                    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/switch_triple_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="24dp"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:background="@color/basic_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/list_item_divider_height" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                            <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/layout_touch_and_hold_switch" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@+id/touch_and_hold_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/switch_layout_touch_and_hold">
+                                    <LinearLayout android:orientation="vertical" android:id="@+id/text_layout_touch_and_hold" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_marginStart="@dimen/list_item_content_inset">
+                                        <TextView android:id="@+id/touch_and_hold_main_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_touchpad_option_menu" style="@style/ListItemTitleTextAppearance"/>
+                                        <TextView android:textSize="13sp" android:textColor="@color/color_primary_dark" android:id="@+id/touch_and_hold_sub_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routine_label_touchpad_left" android:includeFontPadding="true" android:fontFamily="@string/roboto_regular"/>
+                                        <TextView android:textSize="13sp" android:textColor="@color/color_primary_dark" android:id="@+id/touch_and_hold_sub_txt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/routine_label_touchpad_right" android:includeFontPadding="true" android:fontFamily="@string/roboto_regular"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/switch_layout_touch_and_hold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/touch_and_hold_content_layout" android:layout_alignBottom="@+id/touch_and_hold_content_layout" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                                    <View android:layout_gravity="center_vertical" android:id="@+id/touch_and_hold_switch_divider" android:background="@color/basic_vertical_divider_color" android:layout_width="@dimen/list_item_divider_height" android:layout_height="@dimen/switch_divider_height"/>
+                                    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/switch_touch_and_hold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="24dp"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </com.samsung.accessory.hearablemgr.common.p009ui.RoundedCornerLayout>
+                </LinearLayout>
+            </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveWidthLayout>
+        </RelativeLayout>
+    </com.samsung.accessory.hearablemgr.common.p009ui.ResponsiveNestedScrollView>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_top_left" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800033"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_top_right" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800035"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_bottom_left" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800053"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/rc_bottom_right" app:layout_anchor="@+id/nested_scroll" app:layout_anchorGravity="800055"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

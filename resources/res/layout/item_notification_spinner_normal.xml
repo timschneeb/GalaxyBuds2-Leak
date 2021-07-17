@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="18sp" android:textColor="@color/selector_list_title_color" android:ellipsize="marquee" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@string/roboto_regular" android:paddingStart="15dp" android:paddingEnd="4dp"/>

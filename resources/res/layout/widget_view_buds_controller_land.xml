@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_widget_quick_control_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/widget_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background_widget"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/widget_landscape_layout_min_width" android:minHeight="@dimen/widget_landscape_layout_min_height" android:paddingStart="18dp" android:paddingEnd="18dp">
+            <TextView android:textSize="@dimen/widget_landscape_device_bt_name_text_size" android:ellipsize="end" android:gravity="center" android:id="@+id/widget_text_device_bt_name" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="3" style="@style/WidgetTitleTextAppearance"/>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/widget_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="10dp">
+                        <TextView android:textSize="@dimen/widget_landscape_master_title_text_size" android:textColor="#808080" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_widget_buds_battery" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:importantForAccessibility="no" android:textDirection="locale"/>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_case_battery" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/widget_portrait_master_title_text_size" android:textColor="#808080" android:gravity="center" android:id="@+id/text_widget_case_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="no"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/switch_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:soundEffectsEnabled="false">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/image_widget_quick_control_option_1_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_bg_off"/>
+                        <ImageView android:id="@+id/image_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_ic_noise_control"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.3" android:layout_marginStart="4dp">
+                        <TextView android:textSize="@dimen/widget_landscape_master_title_text_size" android:textColor="@color/widget_title_color_style_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_widget_quick_control_option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2" android:includeFontPadding="false" android:importantForAccessibility="no" android:textDirection="locale" android:paddingStart="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="10dp" android:paddingEnd="10dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/widget_quick_control_divider" android:background="@color/widget_divider_color_black" android:layout_width="1dp" android:layout_height="match_parent" android:layout_weight="0.1"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/switch_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/image_widget_quick_control_option_2_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_bg_off"/>
+                        <ImageView android:id="@+id/image_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_ic_block_touch"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.3" android:layout_marginStart="4dp">
+                        <TextView android:textSize="@dimen/widget_landscape_master_title_text_size" android:textColor="@color/widget_title_color_style_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_widget_quick_control_option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_touchpad_menu1" android:lines="2" android:includeFontPadding="false" android:importantForAccessibility="no" android:textDirection="locale" android:paddingStart="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
